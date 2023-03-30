@@ -1,0 +1,13 @@
+.loading {
+  color: white;
+}
+
+.content-boxes {
+  display:flex;
+  justify-content: space-evenly;
+}
+
+.left-content-box {
+  display:flex;
+  justify-content: left;
+}
