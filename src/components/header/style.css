@@ -1,5 +1,5 @@
 .header {
-  display:flex;
+  display: flex;
   height: 61px;
   padding-bottom: 20px;
   justify-content: space-between;
@@ -20,13 +20,13 @@
   border-radius: 20px;
   cursor: pointer;
 }
-  
+
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: black;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   font-family: "Gill Sans", sans-serif;
   font-weight: bold;
@@ -75,6 +75,11 @@
   font-size: 16px;
 }
 
+.gradient-button a {
+  color: white;
+  text-decoration: none;
+}
+
 .arrow {
   border: solid white;
   border-width: 0 3px 3px 0;
@@ -87,4 +92,10 @@
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+}
+
+.news-description-wrapper {
+  height: 500px;
+  overflow-y: auto;
+  padding-right: 10px;
 }

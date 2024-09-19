@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 // TODO : Reformat the divs, they should be organized by column not row
 
-function GameBox({ id, team1, team2, score1, score2, livetext }) {
+function GameBox({ id, team1Name, team2Name, team1Score, team2Score, livetext }) {
   return (
     <Link to={`/soccer/${id}`}>
       <div className="gamebox">
@@ -12,24 +12,24 @@ function GameBox({ id, team1, team2, score1, score2, livetext }) {
           <table style={{ width: "100%" }}>
             <tr>
               <td style={{ width: "20%" }}>
-                <img className="smallimg" src={`/imgs/${team1}.png`}></img>
+                <img className="smallimg" src={`/imgs/${team1Name}.png`}></img>
               </td>
               <td style={{ width: "50%" }}>
-                <p className="team">{team1}</p>
+                <p className="team">{team1Name}</p>
               </td>
               <td style={{ width: "30%" }}>
-                <p className="score">{score1}</p>
+                <p className="score">{team1Score}</p>
               </td>
             </tr>
             <tr>
               <td>
-                <img className="smallimg" src={`/imgs/${team2}.png`}></img>
+                <img className="smallimg" src={`/imgs/${team2Name}.png`}></img>
               </td>
               <td>
-                <p className="team">{team2}</p>
+                <p className="team">{team2Name}</p>
               </td>
               <td>
-                <p className="score">{score2}</p>
+                <p className="score">{team2Score}</p>
               </td>
             </tr>
           </table>

@@ -15,7 +15,7 @@ function Content({ games }) {
       {
         games.map(game => {
           return (
-            <GameBox id={game.id} team1={game.team1} team2={game.team2} score1={game.score1} score2={game.score2} livetext={game.livetext} />
+            <GameBox id={game.id} team1Name={game.team1Name} team2Name={game.team2Name} team1Score={game.team1Score} team2Score={game.team2Score} livetext={game.livetext} />
           );
         })
       }

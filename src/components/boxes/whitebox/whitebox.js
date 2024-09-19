@@ -22,8 +22,8 @@ function WhiteBox({ Title, titleProps, Content, contentProps, width, height, hid
   return (
     <div className="square" style={styleObj}>
       {/* <h1 className="title">{title}</h1> */}
-      { (Title !== undefined) && <Title {...titleProps} />}
-      { (Content !== undefined) && <Content {...contentProps} />}
+      {(Title !== undefined) && <Title {...titleProps} />}
+      {(Content !== undefined) && <Content {...contentProps} />}
     </div>
   );
 }

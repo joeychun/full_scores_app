@@ -1,4 +1,5 @@
 import './style.css';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -14,7 +15,7 @@ function Header() {
       <div style={{ textAlign: "center", verticalAlign: "middle", lineHeight: "normal" }}>
         <img src="/imgs/SIS.png" className="bigimg"></img>
       </div>
-      <button className="gradient-button"> tigersportscouncil </button>
+      <button className="gradient-button"> <Link to="https://www.instagram.com/tigersportscouncil/">tigersportscouncil</Link></button>
     </div>
   );
 }

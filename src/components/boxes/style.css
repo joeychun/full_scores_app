@@ -6,8 +6,8 @@
   margin: 5px;
 }
 
-.title{
-  padding-top: 20px; 
+.title {
+  padding-top: 20px;
   padding-left: 20px;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .leftdiv {
-  display:flex;
+  display: flex;
   flex-direction: column;
   float: left;
 }

@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './components/header/header';
 import Soccer from './pages/soccer/soccer';
-import Test from './pages/test/test';
+// import Test from './pages/test/test';
 import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { firestore } from './firebase';
@@ -9,7 +9,6 @@ import { firestore } from './firebase';
 function App() {
 
   const [allDocs, setAllDocs] = useState([]);
-
   useEffect(() => {
     let unmounted = false; // May be unnecessary
     fetchAll();
@@ -22,6 +21,7 @@ function App() {
       clearInterval(interval)
     };
   }, []);
+  console.log(allDocs);
 
   async function fetchAll() {
     await firestore.collection("games")
@@ -47,7 +47,7 @@ function App() {
             path='/'
             exact element={<Navigate to='/soccer' />}
           /> */}
-          <Route path='/' exact element={<Test />} />
+          <Route path='/' element={<Navigate to='/soccer' />} />
           <Route path='/soccer' exact element={<Soccer games={allDocs} />} />
           <Route path='/soccer/:id' exact element={<Soccer games={allDocs} />} />
         </Routes>

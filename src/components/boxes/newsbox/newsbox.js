@@ -14,16 +14,18 @@ function Content({ game }) {
   const allNews = game.news;
   return (
     <div className="leftdiv">
-      {
-        allNews.map(news => {
-          return (
-            <div>
-              <p className="news-headline">{news.headline}</p>
-              <p className="news-description">{news.description}</p>
-            </div>
-          );
-        })
-      }
+      <div className="news-description-wrapper">
+        {
+          allNews.map(news => {
+            return (
+              <div>
+                <p className="news-headline">{news.headline}</p>
+                <p className="news-description">{news.description}</p>
+              </div>
+            );
+          })
+        }
+      </div>
     </div>
   );
 }

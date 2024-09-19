@@ -22,11 +22,11 @@ function Title({ game }) {
 function Content({ game }) {
   return (
     <div class="liveteam">
-      <img class="liveimg" src={`/imgs/${game.team1}.png`}></img>
-      <p class="livescore">{game.score1}</p>
+      <img class="liveimg" src={`/imgs/${game.team1Name}.png`}></img>
+      <p class="livescore">{game.team1Score}</p>
       <p class="livescore">-</p>
-      <p class="livescore">{game.score2}</p>
-      <img class="liveimg" src={`/imgs/${game.team2}.png`}></img>
+      <p class="livescore">{game.team2Score}</p>
+      <img class="liveimg" src={`/imgs/${game.team2Name}.png`}></img>
     </div>
   );
 }
